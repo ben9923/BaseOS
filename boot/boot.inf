@@ -1,0 +1,39 @@
+## @file
+#  Brief Description of UEFI MyHelloWorld
+#
+#  Detailed Description of UEFI MyWizardDriver
+#
+#  Copyright for UEFI  boot
+#
+#  License for UEFI  boot
+#
+##
+
+[Defines]
+INF_VERSION         = 1.25
+BASE_NAME           = boot
+FILE_GUID           = D10BD27B-738B-4D5E-8350-BE4979FC24CB
+MODULE_TYPE         = UEFI_APPLICATION
+VERSION_STRING      = 1.0
+ENTRY_POINT         = UefiMain
+VALID_ARCHITECTURES = X64
+
+[Sources]
+boot.c
+
+[Packages]
+MdePkg/MdePkg.dec
+
+[LibraryClasses]
+UefiApplicationEntryPoint
+UefiLib
+
+[Guids]
+
+[Ppis]
+
+[Protocols]
+
+[FeaturePcd]
+
+[Pcd]
